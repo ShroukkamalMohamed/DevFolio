@@ -1,0 +1,7 @@
+body{
+
+}
+.home{
+    background-image: url(../Images/hero-bg.jpg);
+    background-size: cover;
+}
