@@ -78,7 +78,7 @@ h1,h2,h3,h4,h5,h6,p{color:var(--defualtColor)}
 .contact__title h2{color:#000;position:relative}
 .contact__title h2::after{content:"";width:20%;height:3px;background-color:#0078ff;position:absolute;color:#000;bottom:-1px;left:0}
 .btn_Send{background-color:#0078ff;color:#fff;border-radius:20px;margin:auto;padding:10px;}
-.btn_Send:hover{content:""; border:4px solid #cde1f8; ra}
+.btn_Send:hover{content:""; border:4px solid #cde1f8; }
 .contact .getInTouch ul{margin:0;padding:0}
 .contact .getInTouch ul li{display:block;color:#000;margin:0;padding:10 0}
 .contact .getInTouch ul li i{color:#0078ff!important;padding-right:10px}
