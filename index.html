@@ -23,18 +23,33 @@
     <link rel="stylesheet" href="Css/bootstrap.min.css" />
     <link rel="stylesheet" href="Css/fonts.css" />
     <!-- &======================style===========================================& -->
+    <link rel="stylesheet" href="Css/mediaqueries.css" />
     <link rel="stylesheet" href="Css/style.css" />
   </head>
   <body>
     <!-- *home Section -->
-    <div class="navbar">
-      <div class="col-md-4">
-        <div class="home__logo"><a href="#Home">DevFolio</a></div>
-      </div>
-      <div class="col-md-8">
-        <nav class="home__nav">
-          <ul>
-            <li>
+    <nav class="navbar navbar navbar-expand-lg navbar-dark">
+      <div class="container p-2 d-flex justify-content-between">
+        <div class="col-md-4">
+          <a class="navbar-brand home__logo" href="#">DevFolio</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse home__nav"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="active">
               <a href="#Home" class="active">Home</a>
             </li>
             <li>
@@ -56,18 +71,17 @@
               <a href="#Contact">CONTACT</a>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
-    </div>
+    </nav>
 
-    <div class="home">
+    <div class="home d-flex justify-content-center align-items-center">
       <div class="container">
-        <div
-          class="row d-flex justify-content-center align-items-center hero-content display-table home__info bg-danger"
-        >
-          <div class>
-            <div>
-              <h1 class="mb-3 text-center">I am Morgan Freeman</h1>
+        <div class="row hero-content display-table home__info">
+          <div class="align-items-center">
+            <div class="text-center">
+              <h1 class="mb-3">I am Morgan Freeman</h1>
+              <h2></h2>
               <!-- <div class="home__info__sub_titile">
               <p class="typewrite" data-period="2000"
                 data-type='[ "Hi, Im Si.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
@@ -81,7 +95,7 @@
     <!-- * end of home Section -->
 
     <!-- ^About  Section -->
-    <div class="mt-5  p-3 container shadow shadow-lg">
+    <div class="mt-5 p-3 container shadow shadow-lg">
       <div class="About">
         <div class="container">
           <div class="row">
@@ -188,8 +202,8 @@
             <div class="section__title__underline"></div>
           </div>
         </div>
-        <div class="row mb-5">
-          <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-4 mb-5">
             <div class="service__box p-3 border border-white shadow">
               <div
                 class="icon d-flex justify-content-center align-items-center"
@@ -204,7 +218,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-5">
             <div class="service__box p-3 border border-white shadow">
               <div
                 class="icon d-flex justify-content-center align-items-center"
@@ -219,7 +233,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-5">
             <div class="service__box p-3 border border-white shadow">
               <div
                 class="icon d-flex justify-content-center align-items-center"
@@ -235,8 +249,8 @@
             </div>
           </div>
         </div>
-        <div class="row mb-5">
-          <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-4 mb-5">
             <div class="service__box p-3 border border-white shadow">
               <div
                 class="icon d-flex justify-content-center align-items-center"
@@ -251,7 +265,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-5">
             <div class="service__box p-3 border border-white shadow">
               <div
                 class="icon d-flex justify-content-center align-items-center"
@@ -266,7 +280,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-5">
             <div class="service__box p-3 border border-white shadow">
               <div
                 class="icon d-flex justify-content-center align-items-center"
@@ -293,33 +307,33 @@
       >
         <div class="container">
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 workComplete">
               <div class="counter__icons">
                 <i class="fa-solid fa-check"></i>
               </div>
-              <h2 class="workComplete">450</h2>
-              <span>WORKS COMPLETED</span>
+              <h2></h2>
+              <h6 class=".counter__details">WORKS COMPLETED</h6>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 experince">
               <div class="counter__icons">
                 <i class="fa-regular fa-address-book"></i>
               </div>
-              <h2>25</h2>
-              <span>YEARS OF EXPERIENCE</span>
+              <h2> </h2>
+              <h6>YEARS OF EXPERIENCE</h6>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 clints">
               <div class="counter__icons">
                 <i class="fa-solid fa-users"></i>
               </div>
-              <h2>550</h2>
-              <span>TOTAL CLIENTS </span>
+              <h2></h2>
+              <h6>TOTAL CLIENTS</h6>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 award">
               <div class="counter__icons">
                 <i class="fa-solid fa-certificate"></i>
               </div>
-              <h2>48</h2>
-              <span>AWARD WON </span>
+              <h2></h2>
+              <h6>AWARD WON</h6>
             </div>
           </div>
         </div>
@@ -338,7 +352,7 @@
           </div>
         </div>
         <div class="row mb-5">
-          <div class="col-md-4">
+          <div class="col-md-4 mb-1">
             <div class="portfolio__box border shadow">
               <div class="picture">
                 <img src="Images/work-1.jpg" alt />
@@ -358,7 +372,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-1">
             <div class="portfolio__box border shadow">
               <div class="picture">
                 <img src="Images/work-2.jpg" alt />
@@ -378,7 +392,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-1">
             <div class="portfolio__box border shadow">
               <div class="picture">
                 <img src="Images/work-3.jpg" alt />
@@ -401,7 +415,7 @@
           </div>
         </div>
         <div class="row mb-5">
-          <div class="col-md-4">
+          <div class="col-md-4 mb-1">
             <div class="portfolio__box border shadow">
               <div class="picture">
                 <img src="Images/work-4.jpg" alt />
@@ -420,7 +434,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-1">
             <div class="portfolio__box border shadow">
               <div class="picture">
                 <img src="Images/work-5.jpg" alt />
@@ -439,7 +453,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-2">
             <div class="portfolio__box border shadow">
               <div class="picture">
                 <img src="Images/work-6.jpg" alt />
@@ -467,7 +481,60 @@
     <div class="slider mt-5 mb-5">
       <div
         class="slider__layer d-flex justify-content-center align-items-center text-center"
-      ></div>
+      >
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+          <div class="carousel-inner p-3">
+            <div class="carousel-item active">
+              <div class="slider__Content text-center p-5">
+                <img
+                  class="silder__content__pic rounded-circle p-3"
+                  src="Images/testimonial-2.jpg"
+                  alt="man with black sunglasses"
+                />
+                <h2 class="h4 p-2">XAVI ALONSO</h2>
+                <p class="max-w">
+                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                  sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slider__Content text-center p-5">
+                <img
+                  class="silder__content__pic rounded-circle p-3"
+                  src="Images/testimonial-4.jpg"
+                  alt="man with black sunglasses"
+                />
+                <h2 class="h4 p-2">Marta Socrate</h2>
+                <p class="max-w">
+                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                  sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- ~slider end-->
 
@@ -669,6 +736,26 @@
       </div>
     </div>
     <!-- ^contact Section end -->
+    <!-- $footer Section -->
+    <footer class="shadow-lg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">
+                © Copyright <strong>DevFolio</strong>. All Rights Reserved
+              </p>
+              <div class="credits">
+                Designed by
+                <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- $footer Section -->
+
     <!-- ?=======bootStrsp(js)================== -->
     <script src="JS/bootstrap.bundle.min.js"></script>
   </body>
